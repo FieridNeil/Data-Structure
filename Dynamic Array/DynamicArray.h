@@ -1,3 +1,7 @@
+// @author: Fierid Neil
+// @email: fieridneil@gmail.com
+// @date: 6/1/2017
+
 #pragma once
 
 template<class T>
@@ -27,7 +31,7 @@ public:
 
 	void resize();
 
-	~DynamicArray() { clear(); }
+	~DynamicArray<T>() { clear(); }
 
 	T operator[](int index);
 
@@ -98,7 +102,8 @@ bool DynamicArray<T>::is_empty() {
 
 template<class T>
 void DynamicArray<T>::clear() {
-
+	delete[] Darray;
+	len = 0;
 }
 
 template<class T>
@@ -115,10 +120,11 @@ void DynamicArray<T>::resize() {
 	for (int i = 0; i < len; i++) {
 		temp[i] = Darray[i];
 	}
-	T* Darray = new T[capacity];
+	Darray = new T[capacity];
 	for (int i = 0; i < len; i++) {
 		Darray[i] = temp[i];
 	}
+	delete[] temp;
 }
 
 template<class T>
