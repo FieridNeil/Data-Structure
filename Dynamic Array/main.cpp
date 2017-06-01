@@ -1,3 +1,7 @@
+// @author: Fierid Neil
+// @email: fieridneil@gmail.com
+// @date: 6/1/2017
+
 #include "DynamicArray.h"
 #include <iostream>
 
