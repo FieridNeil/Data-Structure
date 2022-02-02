@@ -9,6 +9,8 @@ Time complexity:
     - Delete: O(1)
 
 Use case:
+	- Manage threads in multithreading
+	- Implement queuing system, priority queues, message queue, scheduling
 */
 
 const DLL = require('./dll');

@@ -6,12 +6,13 @@
 
 # List of Data Structure
 
--   ✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)
--   ✅ Singly Linked List
--   ✅ Doubly Linked List
+✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)
+✅ Singly Linked List
+✅ Doubly Linked List
+
 -   [ ] Circular Linked List
--   ✅ Stack
--   ✅ Queue
+        ✅ Stack
+        ✅ Queue
 -   [ ] Hash Map
 -   [ ] Heap
 -   [ ] Tree
@@ -21,21 +22,105 @@
 -   [ ] Treap
 -   [ ] Graph
 
-
 # Array
+
 ### Description:
-- Used to store objects in a continguous space in memory
-- Length: the number of elements currently in the array
-- Capacity: the TOTAL number of elements the array can have
-- Might have to increase capacity when length = capacity
+
+-   Used to store objects in a continguous space in memory
+-   Length: the number of elements currently in the array
+-   Capacity: the TOTAL number of elements the array can have
+-   Might have to increase capacity when length = capacity
+
 ### Time complexity:
-|   Operation | Time Complexity |
-| --- | :---: |
-| 🔑  Access | O(1) |
-| 🔎  Search | O(n) | 
-| ➕  Insert | O(n) |
-| ➖  Delete | O(n) |
+
+| Operation | Time Complexity |
+| --------- | :-------------: |
+| 🔑 Access |      O(1)       |
+| 🔎 Search |      O(n)       |
+| ➕ Insert |      O(n)       |
+| ➖ Delete |      O(n)       |
+
 ### Use case:
-- Very quick to access an element within an array if the position is known 
-- Collect and store data of the same type
-- Foundation data structure that is used by other data structures
+
+-   Very quick to access an element within an array if the position is known
+-   Collect and store data of the same type
+-   Foundation data structure that is used by other data structures
+
+# List (SLL, DLL, CLL)
+
+### Description:
+
+-   Used to store objects in a random places in memory
+-   Length: the number of elements currently in the linked list
+-   No need to increase capcity
+
+### Time complexity:
+
+| Operation | Time Complexity | Notes                                |
+| --------- | :-------------: | ------------------------------------ |
+| 🔑 Access |      O(n)       |                                      |
+| 🔎 Search |      O(n)       |                                      |
+| ➕ Insert |      O(1)       | assuming insert front/back           |
+| ➖ Delete |      O(1)       | assuming we found the node to delete |
+
+### Use case:
+
+-   Quick insert and delete operation if have a reference to location
+-   Useful when a lot of insertions and deletions but not a lot of look up
+-   Splitting and joining lists
+-   No reallocation issue like array
+-   Used to implement queue (DLL) or stack (SLL)
+-   Media playlist looping (CLL)
+
+# Stack
+
+### Description
+
+-   Last In First Out
+
+### Time complexity:
+
+| Operation | Time Complexity | Notes                                        |
+| --------- | :-------------: | -------------------------------------------- |
+| 🔑 Access |      O(1)       | assuming accessing only from top (or bottom) |
+| 🔎 Search |      O(n)       |                                              |
+| ➕ Insert |      O(1)       |                                              |
+| ➖ Delete |      O(1)       |                                              |
+
+    - Access: O(1)
+    - Search: O(n)
+    - Insert: O(1)
+    - Delete: O(1)
+
+### Use case:
+
+-   Bracket matching problem, testing symmetry
+-   Reversing order
+-   Undo/Redo command
+-   Function recursion (the stack!!)
+-   Keep track of most recently used/viewed
+-   Convert notation (infix to postfix)
+-   Back tracking algorithms
+
+# Queue
+
+### Description:
+
+-   First In First Out
+
+### Time complexity:
+
+| Operation | Time Complexity | Notes                                   |
+| --------- | :-------------: | --------------------------------------- |
+| 🔑 Access |      O(1)       | assuming only accessing from front/back |
+| 🔎 Search |      O(n)       |                                         |
+| ➕ Insert |      O(1)       |                                         |
+| ➖ Delete |      O(1)       |                                         |
+
+### Use case:
+
+-   Manage threads in multithreading
+-   Implement queuing system
+-   Priority queues
+-   Message queue
+-   Scheduling
