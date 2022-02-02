@@ -6,13 +6,13 @@
 
 # List of Data Structure
 
-✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)
-✅ Singly Linked List
-✅ Doubly Linked List
+- ✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)  
+- ✅ [Singly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
+- ✅ [Doubly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
 
--   [ ] Circular Linked List
-        ✅ Stack
-        ✅ Queue
+-   [ ] Circular Linked List  
+- ✅ [Stack](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#stack)
+- ✅ [Queue](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#queue)
 -   [ ] Hash Map
 -   [ ] Heap
 -   [ ] Tree
@@ -23,7 +23,8 @@
 -   [ ] Graph
 
 # Array
-
+<details><summary>Click to expand</summary>  
+        
 ### Description:
 
 -   Used to store objects in a continguous space in memory
@@ -45,9 +46,11 @@
 -   Very quick to access an element within an array if the position is known
 -   Collect and store data of the same type
 -   Foundation data structure that is used by other data structures
-
+</details>
+        
 # List (SLL, DLL, CLL)
-
+<details><summary>Click to expand</summary>  
+        
 ### Description:
 
 -   Used to store objects in a random places in memory
@@ -71,9 +74,11 @@
 -   No reallocation issue like array
 -   Used to implement queue (DLL) or stack (SLL)
 -   Media playlist looping (CLL)
+</details>
 
-# Stack
-
+# Stack 
+<details><summary>Click to expand</summary>  
+        
 ### Description
 
 -   Last In First Out
@@ -87,10 +92,6 @@
 | ➕ Insert |      O(1)       |                                              |
 | ➖ Delete |      O(1)       |                                              |
 
-    - Access: O(1)
-    - Search: O(n)
-    - Insert: O(1)
-    - Delete: O(1)
 
 ### Use case:
 
@@ -101,9 +102,11 @@
 -   Keep track of most recently used/viewed
 -   Convert notation (infix to postfix)
 -   Back tracking algorithms
+</details>
 
 # Queue
-
+<details><summary>Click to expand</summary>  
+        
 ### Description:
 
 -   First In First Out
@@ -124,3 +127,4 @@
 -   Priority queues
 -   Message queue
 -   Scheduling
+</details>
