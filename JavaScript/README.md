@@ -4,7 +4,7 @@
 -   [MochaJS](https://mochajs.org/) - JS test framework
 -   [ChaiJS](https://www.chaijs.com/) - BDD/TDD assertion library
 
-# List of Data Structure
+# List of Data Structures
 
 - ✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)  
 - ✅ [Singly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
