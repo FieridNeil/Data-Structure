@@ -12,7 +12,9 @@ Time complexity:
 
 Use case:
     - Quick insert and delete operation if have a reference to location
-    - Collect and store data of multiple type
+    - Useful when a lot of insertions and deletions but not a lot of look up
+    - Splitting and joining lists
+    - No reallocation issue like array
 */
 
 const { assert } = require('chai');
@@ -135,3 +137,5 @@ describe('SLL', () => {
 		assert.equal(sll.at(10), null, 'Should return null');
 	});
 });
+
+module.exports = SLL;
