@@ -6,14 +6,14 @@
 
 # List of Data Structures
 
-- ✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)  
-- ✅ [Singly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
-- ✅ [Doubly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
+-   ✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)
+-   ✅ [Singly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
+-   ✅ [Doubly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
 
--   [ ] Circular Linked List  
-- ✅ [Stack](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#stack)
-- ✅ [Queue](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#queue)
--   [ ] Hash Map
+-   [ ] Circular Linked List
+-   ✅ [Stack](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#stack)
+-   ✅ [Queue](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#queue)
+-   ✅ [Hash Map](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#hashmap)
 -   [ ] Heap
 -   [ ] Tree
 -   [ ] Binary Search Tree
@@ -23,6 +23,7 @@
 -   [ ] Graph
 
 # Array
+
 <details><summary>Click to expand</summary>  
         
 ### Description:
@@ -47,8 +48,9 @@
 -   Collect and store data of the same type
 -   Foundation data structure that is used by other data structures
 </details>
-        
+
 # List (SLL, DLL, CLL)
+
 <details><summary>Click to expand</summary>  
         
 ### Description:
@@ -76,7 +78,8 @@
 -   Media playlist looping (CLL)
 </details>
 
-# Stack 
+# Stack
+
 <details><summary>Click to expand</summary>  
         
 ### Description
@@ -92,7 +95,6 @@
 | ➕ Insert |      O(1)       |                                              |
 | ➖ Delete |      O(1)       |                                              |
 
-
 ### Use case:
 
 -   Bracket matching problem, testing symmetry
@@ -105,6 +107,7 @@
 </details>
 
 # Queue
+
 <details><summary>Click to expand</summary>  
         
 ### Description:
@@ -127,4 +130,28 @@
 -   Priority queues
 -   Message queue
 -   Scheduling
+</details>
+
+# HashMap
+
+<details><summary>Click to expand</summary>  
+        
+### Description:
+
+-   Dictionary type of data structure
+-   Store key, value pair data
+
+### Time complexity:
+
+| Operation | Time Complexity | Notes                 |
+| --------- | :-------------: | --------------------- |
+| 🔑 Access |      O(1)       | assuming no collision |
+| 🔎 Search |      O(1)       | assuming no collision |
+| ➕ Insert |      O(1)       | assuming no collision |
+| ➖ Delete |      O(1)       | assuming no collision |
+
+### Use case:
+
+-   Implement associative array
+-   Quick lookup data structure
 </details>
