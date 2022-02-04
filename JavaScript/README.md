@@ -155,3 +155,36 @@
 -   Implement associative array
 -   Quick lookup data structure
 </details>
+
+# Binary Search Tree
+
+<details><summary>Click to expand</summary>  
+        
+### Description:
+
+-   Each node can have a maximum of 2 children, left and right
+-   Does not need to be balanced
+-   Left child value < parent value < right child value
+-   Preorder traversal: read parent nodes first then read left nodes and then right nodes (P-L-R)
+-   Inorder traversal: read all the left child first then read parent node then right nodes (L-P-R)
+-   Postorder traverssal: read all the left child and then right child then parent (L-R-P)
+
+### Time complexity:
+
+| Operation | Time Complexity | Notes |
+| --------- | :-------------: | ----- |
+| 🔑 Access |    O(log n)     |       |
+| 🔎 Search |    O(log n)     |       |
+| ➕ Insert |    O(log n)     |       |
+| ➖ Delete |    O(log n)     |       |
+
+Note: The above operations can be all log n if the input is sorted (ie. 1,2,3,4,5,6)
+
+### Use case:
+
+-   Fast when searching
+-   Used in Huffman Coding Algorithm
+-   Used to implement multilevel indexing in database
+-   Implement routing table in router
+-   Data compression
+</details>

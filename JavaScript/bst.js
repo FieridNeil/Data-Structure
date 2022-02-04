@@ -1,3 +1,12 @@
+// The above implementation used recursive approach
+// There are 6 functions/methods:
+// - Insert
+// - Search
+// - Delete
+// - Inorder
+// - Preorder
+// - Postorder
+
 class Node {
 	data;
 	left = null;
