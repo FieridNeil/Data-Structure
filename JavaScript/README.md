@@ -6,12 +6,12 @@
 
 # List of Data Structures
 
--   ✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)
--   ✅ [Singly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
--   ✅ [Doubly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
--   ✅ [Stack](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#stack)
--   ✅ [Queue](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#queue)
--   ✅ [Hash Map](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#hashmap)
+-   ✅ [Array](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#array)
+-   ✅ [Singly Linked List](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#list-sll-dll-cll)
+-   ✅ [Doubly Linked List](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#list-sll-dll-cll)
+-   ✅ [Stack](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#stack)
+-   ✅ [Queue](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#queue)
+-   ✅ [Hash Map](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#hashmap)
 -   [ ] Heap
 -   [ ] Tree
 -   ✅ [Binary Search Tree](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#binay-search-tree)
