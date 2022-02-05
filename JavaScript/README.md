@@ -13,8 +13,8 @@
 -   ✅ [Queue](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#queue)
 -   ✅ [Hash Map](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#hashmap)
 -   [ ] Heap
--   ✅ Tree
--   [ ] Binary Search Tree
+-   [ ] Tree
+-   ✅ [Binary Search Tree](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#binay-search-tree)
 -   [ ] AVL Tree
 -   [ ] Trie
 -   [ ] Treap
