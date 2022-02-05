@@ -9,13 +9,11 @@
 -   ✅ [Array](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#array)
 -   ✅ [Singly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
 -   ✅ [Doubly Linked List](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#list-sll-dll-cll)
-
--   [ ] Circular Linked List
 -   ✅ [Stack](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#stack)
 -   ✅ [Queue](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#queue)
 -   ✅ [Hash Map](https://github.com/FieridNeil/Data-Structure/edit/master/JavaScript/README.md#hashmap)
 -   [ ] Heap
--   [ ] Tree
+-   ✅ Tree
 -   [ ] Binary Search Tree
 -   [ ] AVL Tree
 -   [ ] Trie
