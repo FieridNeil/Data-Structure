@@ -14,7 +14,7 @@
 -   ✅ [Hash Map](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#hashmap)
 -   [ ] Heap
 -   [ ] Tree
--   ✅ [Binary Search Tree](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#binay-search-tree)
+-   ✅ [Binary Search Tree](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#binary-search-tree)
 -   [ ] AVL Tree
 -   [ ] Trie
 -   [ ] Treap
