@@ -12,7 +12,7 @@
 -   ✅ [Stack](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#stack)
 -   ✅ [Queue](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#queue)
 -   ✅ [Hash Map](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#hashmap)
--   ✅ [MinHeap](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#minheap)
+-   ✅ [MinHeap](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#heap)
 -   ✅ [Binary Search Tree](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#binary-search-tree)
 -   ✅ [Trie](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#trie)
 -   [ ] Tree
@@ -205,8 +205,8 @@ Note: The above operations can be all log n if the input is sorted (ie. 1,2,3,4,
 
 | Operation | Time Complexity | Notes |
 | --------- | :-------------: | ----- |
-| Find min  |      O(1)       |       |
-| search    |      O(n)       |       |
+| 🔑 Find min  |      O(1)       |       |
+| 🔎 Search    |      O(n)       |       |
 | ➕ Insert |    O(log n)     |       |
 | ➖ Delete |    O(log n)     |       |
 
