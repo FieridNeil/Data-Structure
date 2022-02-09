@@ -1,3 +1,5 @@
+const { assert } = require('chai');
+
 const ENG_ALP = 26;
 class Node {
 	constructor(val) {
@@ -27,7 +29,43 @@ class Trie {
 		curr.isEnd = true;
 	}
 
-	delete(word) {}
+	#deleteHelper(root, word, level, str) {
+		// In case the word does not exist or tree is empty
+		if (root === null) {
+			str.splice(0, str.length);
+			return null;
+		}
+		// Base case, if we reach the end of word
+		if (level == word.length) {
+			// Check if there is any more children after (this string is a prefix)
+			if (this.#hasChildren(root.children)) {
+				root.isEnd = false;
+			} else {
+				root = null;
+			}
+
+			return root;
+		}
+
+		let idx = word[level].charCodeAt() - 'a'.charCodeAt();
+		str.push(String.fromCharCode(97 + idx));
+		root.children[idx] = this.#deleteHelper(root.children[idx], word, level + 1, str);
+
+		if (!this.#hasChildren(root.children) && root.isEnd === false) {
+			root = null;
+		}
+
+		return root;
+	}
+
+	delete(word) {
+		if (this.#root === null) {
+			return null;
+		}
+		let str = [];
+		this.#deleteHelper(this.#root, word, 0, str);
+		return str.length > 0 ? str.join('') : null;
+	}
 
 	search(word) {
 		let curr = this.#root;
@@ -57,12 +95,12 @@ class Trie {
 				str += String.fromCharCode(i + 97);
 				if (root.children[i].isEnd === false) {
 					this.#printHelper(visited, root.children[i], str);
-					str = str.slice(str.length);
+					str = str.slice(0, str.length - 1);
 				} else {
 					visited.push(str);
 					if (this.#hasChildren(root.children[i].children) === true) {
 						this.#printHelper(visited, root.children[i], str);
-						str = str.slice(str.length);
+						str = str.slice(0, str.length - 1);
 					}
 				}
 			}
@@ -80,9 +118,44 @@ class Trie {
 	}
 }
 
-const t = new Trie();
+describe('Trie', () => {
+	let t;
+	beforeEach(() => {
+		t = new Trie();
+		t.insert('hello');
+		t.insert('height');
+		t.insert('fish');
+		t.insert('fishing');
+		t.insert('he');
+	});
+	it('Insert', () => {
+		t.insert('world');
+		t.insert('word');
+		t.insert('wording');
+		t.insert('boat');
+		t.insert('icecream');
+		t.insert('worry');
 
-t.insert('aaa');
-t.insert('bbb');
-t.insert('ccc');
-console.log(t.print());
+		assert.sameDeepMembers(
+			t.print(),
+			['hello', 'height', 'boat', 'fish', 'fishing', 'he', 'world', 'word', 'wording', 'worry', 'icecream'],
+			'Should be the same'
+		);
+		assert.equal(t.search('worry'), true, 'Should be true');
+		assert.equal(t.search('world'), true, 'Should be true');
+	});
+
+	it('search', () => {
+		assert.equal(t.search('hello'), true, 'Should be true');
+		assert.equal(t.search('hi'), false, 'Should be false');
+		assert.equal(t.search(''), false, 'Should be false');
+	});
+
+	it('delete', () => {
+		assert.equal(t.delete('bomb'), null, 'Should return null');
+		assert.equal(t.delete('hello'), 'hello', 'should return hello');
+		assert.equal(t.search('he'), true, 'should return true, he should be in there');
+		assert.equal(t.delete('fish'), 'fish', 'Should return fish');
+		assert.equal(t.search('fishing'), true, 'should return true, fishing should be in there');
+	});
+});
