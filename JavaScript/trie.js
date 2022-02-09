@@ -8,50 +8,81 @@ class Node {
 }
 
 class Trie {
-    #root = null
+	#root = null;
 
 	insert(word) {
-        let curr = this.#root;
-        for(let level = 0; level < word.length; level++){
-            let idx = word[level].charCodeAt() - 'a'.charCodeAt()
-            if(curr.children[idx] === null){
-                curr.children[idx] = new Node()
-                curr.children[idx].occurrence++
-            }
+		if (this.#root === null) {
+			this.#root = new Node();
+		}
+		let curr = this.#root;
+		for (let level = 0; level < word.length; level++) {
+			let idx = word[level].charCodeAt() - 'a'.charCodeAt();
+			if (curr.children[idx] === null) {
+				curr.children[idx] = new Node();
+				curr.children[idx].occurrence++;
+			}
 
-            curr = curr.children[idx]
-        }
-
-        curr.isEnd = true
-
-    }
+			curr = curr.children[idx];
+		}
+		curr.isEnd = true;
+	}
 
 	delete(word) {}
 
-	search(word) {}
+	search(word) {
+		let curr = this.#root;
+		let idx = -1;
 
-    #printHelper(root, str){
-       let curr = this.#root
-        for(let i = 0; i < ENG_ALP; i++){
-            if(root.children[i].isEnd === false){
-                this.#printHelper(root.children[i])
-                str += 
-            }
-            if(root.children[i] !== null){
-                str += String.fromCharCode(97 + i)
-            }else{
-                this.#printHelper(root.children)
-            }
-        }
+		for (let level = 0; level < word.length; level++) {
+			idx = word[level].charCodeAt() - 'a'.charCodeAt();
+			if (curr.children[idx] === null) {
+				return false;
+			}
+			curr = curr.children[idx];
+		}
+		if (curr.isEnd === true) {
+			return true;
+		}
 
-    }
+		return false;
+	}
+
+	#hasChildren(arr) {
+		return arr.some((el) => el !== null);
+	}
+
+	#printHelper(visited, root, str) {
+		for (let i = 0; i < ENG_ALP; i++) {
+			if (root.children[i] !== null) {
+				str += String.fromCharCode(i + 97);
+				if (root.children[i].isEnd === false) {
+					this.#printHelper(visited, root.children[i], str);
+					str = str.slice(str.length);
+				} else {
+					visited.push(str);
+					if (this.#hasChildren(root.children[i].children) === true) {
+						this.#printHelper(visited, root.children[i], str);
+						str = str.slice(str.length);
+					}
+				}
+			}
+		}
+	}
 
 	print() {
-       if(this.#root === null){
-           return null
-       }
-       let str = ''
-       this.#printHelper(this.#root, str)
-
-    }
+		if (this.#root === null) {
+			return null;
+		}
+		const visited = [];
+		let str = '';
+		this.#printHelper(visited, this.#root, str);
+		return visited;
+	}
 }
+
+const t = new Trie();
+
+t.insert('aaa');
+t.insert('bbb');
+t.insert('ccc');
+console.log(t.print());
