@@ -12,11 +12,11 @@
 -   ✅ [Stack](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#stack)
 -   ✅ [Queue](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#queue)
 -   ✅ [Hash Map](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#hashmap)
--   [ ] Heap
--   [ ] Tree
+-   ✅ [MinHeap](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#minheap)
 -   ✅ [Binary Search Tree](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#binary-search-tree)
+-   ✅ [Trie](https://github.com/FieridNeil/Data-Structure/tree/master/JavaScript#trie)
+-   [ ] Tree
 -   [ ] AVL Tree
--   [ ] Trie
 -   [ ] Treap
 -   [ ] Graph
 
@@ -185,4 +185,63 @@ Note: The above operations can be all log n if the input is sorted (ie. 1,2,3,4,
 -   Used to implement multilevel indexing in database
 -   Implement routing table in router
 -   Data compression
+</details>
+
+# Heap
+
+<details><summary>Click to expand</summary>  
+        
+### Description:
+
+-   There are a maximum of 2 child nodes for any given node
+-   All levels of tree must be completely filled, except the last level
+-   Nodes must be filled from left to right.
+-   For min heap: the child nodes have to have larger value than their parent
+-   For max heap: the child nodes have to have smaller value than their parent
+-   For a node i, to get the left child use: 2i + 1, right child use: 2i + 2
+-   For a node i, to get to the parent use: floor(i / 2)
+
+### Time complexity:
+
+| Operation | Time Complexity | Notes |
+| --------- | :-------------: | ----- |
+| Find min  |      O(1)       |       |
+| search    |      O(n)       |       |
+| ➕ Insert |    O(log n)     |       |
+| ➖ Delete |    O(log n)     |       |
+
+### Use case:
+
+-   Priority queue, scheduler
+-   Instant access to min/max node
+</details>
+
+# Trie
+
+<details><summary>Click to expand</summary>  
+        
+### Description:
+
+-   A type of n-ary tree
+-   Each node stores a letter of a word in the alphabet, or string
+-   Quick search, insert, and delete
+-   Faster alternative to hash table since there's no hash function to compute and no collision and BST
+-   Not memory efficient
+
+### Time complexity:
+
+| Operation | Time Complexity | Notes |
+| --------- | :-------------: | ----- |
+| 🔑 Access |      O(n)       |       |
+| 🔎 Search |      O(n)       |       |
+| ➕ Insert |      O(n)       |       |
+| ➖ Delete |      O(n)       |       |
+
+### Use case:
+
+-   Store predictive text or autocomplete words
+-   Spell checker
+-   Lexicographic sorting using preorder traversal
+-   Longest prefix matching (in router)
+-   Detect string pattern/most used word
 </details>
